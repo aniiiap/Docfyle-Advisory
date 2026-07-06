@@ -1,7 +1,7 @@
-import { groq } from "next-sanity";
+// GROQ queries for Sanity CMS
 
 // Query for the Featured Blog Post
-export const featuredPostQuery = groq`
+export const featuredPostQuery = `
   *[_type == "post" && status == "published" && featured == true] | order(publishedAt desc)[0] {
     _id,
     title,
@@ -21,7 +21,7 @@ export const featuredPostQuery = groq`
 `;
 
 // Query for Paginated Latest Blogs (excluding the featured one)
-export const latestPostsQuery = groq`
+export const latestPostsQuery = `
   *[_type == "post" && status == "published" && _id != $featuredId] | order(publishedAt desc)[$start...$end] {
     _id,
     title,
@@ -37,7 +37,7 @@ export const latestPostsQuery = groq`
 `;
 
 // Query for a single post by slug
-export const postBySlugQuery = groq`
+export const postBySlugQuery = `
   *[_type == "post" && slug.current == $slug && status == "published"][0] {
     _id,
     title,
@@ -61,7 +61,7 @@ export const postBySlugQuery = groq`
 `;
 
 // Query for all slugs to generate static paths/sitemap
-export const allPostSlugsQuery = groq`
+export const allPostSlugsQuery = `
   *[_type == "post" && status == "published"] {
     "slug": slug.current,
     publishedAt
@@ -69,7 +69,7 @@ export const allPostSlugsQuery = groq`
 `;
 
 // Query for related posts based on categories
-export const relatedPostsQuery = groq`
+export const relatedPostsQuery = `
   *[_type == "post" && status == "published" && _id != $currentPostId && count((categories[]->title)[@ in $categories]) > 0] | order(publishedAt desc)[0...3] {
     _id,
     title,
@@ -85,7 +85,7 @@ export const relatedPostsQuery = groq`
 `;
 
 // Query for all categories (for filter UI)
-export const allCategoriesQuery = groq`
+export const allCategoriesQuery = `
   *[_type == "category"] | order(title asc) {
     _id,
     title,
