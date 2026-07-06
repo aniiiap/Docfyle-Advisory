@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --color-surface: #fffdf9;
+  --color-muted: #f3ede4;
+  --color-border: #e8e0d6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-page-in {
+  animation: page-in 0.35s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-page-in {
+    animation: none;
+  }
+}
+
+body {
+  @apply bg-brand-cloud font-sans text-brand-ink antialiased;
+}
+
+* {
+  @apply border-brand-200/80;
+}
+
+.container-base {
+  @apply mx-auto w-full max-w-[1440px] px-5 sm:px-7 md:px-9 lg:px-12 xl:px-14;
+}
+
+.section-space {
+  @apply py-20 sm:py-24 lg:py-28;
+}
+
+.section-tone-light {
+  @apply bg-brand-cream;
+}
+
+.section-tone-muted {
+  @apply bg-brand-sand/70;
+}
+
+.section-tone-brand {
+  @apply bg-gradient-to-b from-brand-cream via-brand-50/80 to-brand-sand/50;
+}
+
+.card-surface {
+  @apply rounded-2xl border border-[#e8e0d6]/90 bg-brand-cream shadow-card transition-shadow duration-300;
+}
+
+.card-surface:hover {
+  @apply shadow-soft;
+}
+
+.gradient-text {
+  @apply bg-brand-gradient bg-clip-text text-transparent;
+}
+
+.glass-surface {
+  @apply rounded-2xl border border-white/25 bg-white/15 shadow-soft backdrop-blur-md;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Long-form legal / policy pages */
+.legal-prose {
+  @apply text-[0.9375rem] leading-[1.75] text-brand-stone sm:text-base sm:leading-[1.8];
+}
+
+.legal-prose h2.legal-h2 {
+  @apply mt-12 sm:mt-16;
+}
+
+.legal-prose h2.legal-h2:first-of-type {
+  @apply mt-0;
+}
+
+.legal-prose h3 {
+  @apply mt-8 text-base font-semibold tracking-tight text-brand-ink sm:text-[1.05rem];
+}
+
+.legal-prose p {
+  @apply mt-4;
+}
+
+.legal-prose ul {
+  @apply mt-4 space-y-2.5;
+}
+
+.legal-prose ul li {
+  @apply relative pl-5 text-brand-stone;
+}
+
+.legal-prose ul li::before {
+  content: "";
+  @apply absolute left-0 top-[0.65em] h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-brand-gold/80;
+}
+
+.legal-prose strong {
+  @apply font-semibold text-brand-ink;
+}
+
+.legal-prose a {
+  @apply font-medium text-brand-600 underline decoration-brand-200 underline-offset-[3px] transition hover:decoration-brand-600 hover:text-brand-700;
+}
+
+/* Blog article body */
+.blog-prose h2 {
+  @apply relative mt-12 scroll-mt-28 pl-5 text-xl font-bold tracking-tight text-brand-navy first:mt-0 sm:mt-14 sm:text-2xl;
+}
+
+.blog-section-marker {
+  @apply absolute left-0 top-1.5 h-[calc(100%-0.5rem)] w-1 rounded-full bg-gradient-to-b from-brand-gold via-brand-600 to-brand-gold/40;
+}
+
+.blog-prose p {
+  @apply mt-4 text-base leading-relaxed text-brand-stone sm:text-[1.05rem] sm:leading-[1.8];
+}
+
+.blog-prose p:first-of-type::first-letter {
+  @apply float-left mr-2 mt-0.5 font-serif text-4xl font-bold leading-none text-brand-600 sm:text-5xl;
+}
+
+.blog-prose ul {
+  @apply mt-4 list-disc space-y-2 pl-6 text-brand-stone;
+}
+
+.blog-excerpt-card {
+  @apply shadow-soft;
+}
+
+.blog-article-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(193 127 58 / 0.45) 20%,
+    rgb(42 123 140 / 0.5) 50%,
+    rgb(193 127 58 / 0.45) 80%,
+    transparent
+  );
+}

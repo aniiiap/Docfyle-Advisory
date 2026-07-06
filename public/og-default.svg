@@ -1,0 +1,16 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F8FAFC"/>
+  <rect x="80" y="80" width="1040" height="470" rx="28" fill="url(#paint0_linear)"/>
+  <text x="140" y="280" fill="white" font-family="Arial, sans-serif" font-size="66" font-weight="700">
+    Docfyle Advisory
+  </text>
+  <text x="140" y="350" fill="white" font-family="Arial, sans-serif" font-size="32">
+    Bookkeeping &amp; Accounting Services
+  </text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="80" y1="80" x2="1120" y2="550" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#315FF0"/>
+      <stop offset="1" stop-color="#7C4DFF"/>
+    </linearGradient>
+  </defs>
+</svg>

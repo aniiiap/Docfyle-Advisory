@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="630" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f3ede4"/>
+      <stop offset="0.4" stop-color="#dceeea"/>
+      <stop offset="1" stop-color="#2a7b8c"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#1b4f5c"/>
+      <stop offset="1" stop-color="#1a2f3a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="150" cy="480" r="200" fill="#1b4f5c" fill-opacity="0.08"/>
+  <!-- Document stack -->
+  <rect x="680" y="160" width="320" height="400" rx="16" fill="#fff" fill-opacity="0.92"/>
+  <rect x="710" y="200" width="200" height="12" rx="6" fill="#2a7b8c" fill-opacity="0.3"/>
+  <rect x="710" y="230" width="260" height="8" rx="4" fill="#c17f3a" fill-opacity="0.4"/>
+  <rect x="710" y="255" width="240" height="8" rx="4" fill="#2a7b8c" fill-opacity="0.2"/>
+  <rect x="710" y="280" width="220" height="8" rx="4" fill="#2a7b8c" fill-opacity="0.2"/>
+  <rect x="710" y="330" width="120" height="36" rx="8" fill="url(#teal)"/>
+  <text x="730" y="354" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">TAX READY</text>
+  <!-- Checkmark circle -->
+  <circle cx="520" cy="320" r="100" fill="#2a7b8c" fill-opacity="0.2"/>
+  <circle cx="520" cy="320" r="70" fill="#1b4f5c"/>
+  <path d="M490 320 L510 345 L555 295" stroke="#e8b87a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="80" y="120" fill="#1a2f3a" font-family="system-ui,sans-serif" font-size="32" font-weight="800">Clean Books</text>
+  <text x="80" y="168" fill="#236570" font-family="system-ui,sans-serif" font-size="26" font-weight="600">Tax Season Ready</text>
+</svg>
