@@ -13,7 +13,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const post = await client.fetch(postBySlugQuery, { slug: params.slug });
+  const { slug } = await params;
+  const post = await client.fetch(postBySlugQuery, { slug });
   if (!post) return {};
   
   const imgUrl = post.mainImage ? urlForImage(post.mainImage) : "";
@@ -52,7 +53,8 @@ function articleJsonLd(post) {
 }
 
 export default async function BlogPostPage({ params }) {
-  const post = await client.fetch(postBySlugQuery, { slug: params.slug });
+  const { slug } = await params;
+  const post = await client.fetch(postBySlugQuery, { slug });
   if (!post) notFound();
 
   const categoryTitles = post.categories?.map((c) => c.title) || [];
