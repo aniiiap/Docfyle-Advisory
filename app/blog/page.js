@@ -28,7 +28,7 @@ function blogListingJsonLd(posts) {
     "@type": "Blog",
     name: `${siteConfig.name} Blog`,
     url: absoluteUrl("/blog"),
-    description: "Insights on bookkeeping, accounting, and financial operations.",
+    description: "Expert bookkeeping tips, accounting guides, tax preparation advice, and financial insights for US businesses from Docfyle Advisory.",
     blogPost: posts.map((post) => {
       const imgUrl = post.mainImage ? urlForImage(post.mainImage) : "";
       return {

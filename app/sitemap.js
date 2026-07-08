@@ -10,12 +10,10 @@ export default async function sitemap() {
     "/industries-we-support",
     "/blog",
     "/why-choose-us",
+    "/our-team",
     "/contact",
     "/privacy-policy",
     "/terms-and-conditions",
-    "/our-services",
-    "/bookkeeping-accounting-services-usa",
-    "/our-team",
   ];
 
   const staticEntries = staticPages.map((path) => ({
