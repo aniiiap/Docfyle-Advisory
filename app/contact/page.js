@@ -9,9 +9,18 @@ import { absoluteUrl, pageMetadata, siteConfig } from "@/lib/site";
 import { FAQSection } from "@/sections/home-sections";
 
 export const metadata = pageMetadata({
-  title: "Contact",
+  title: "Contact Docfyle Advisory | Get a Free Bookkeeping Consultation",
   path: "/contact",
-  description: "Contact Docfyle Advisory to discuss bookkeeping, tax filing, and financial reporting needs.",
+  description:
+    "Get in touch with Docfyle Advisory for a free consultation on virtual bookkeeping, accounting, tax preparation, or CFO services. Offices in San Jose, CA and India. Reach us by phone, email, or form.",
+  keywords: [
+    "contact bookkeeping firm USA",
+    "free bookkeeping consultation",
+    "hire virtual bookkeeper",
+    "outsource accounting services",
+    "bookkeeping services San Jose CA",
+    "virtual accounting consultation",
+  ],
 });
 
 export default function ContactPage() {

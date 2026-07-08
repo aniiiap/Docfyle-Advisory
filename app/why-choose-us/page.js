@@ -10,18 +10,19 @@ import { absoluteUrl, pageMetadata } from "@/lib/site";
 import { combineSchemas, pageServiceSchema } from "@/lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Why Choose Us | Virtual Bookkeeping & Accounting",
+  title: "Why Choose Docfyle Advisory for Bookkeeping & Accounting?",
   path: "/why-choose-us",
   description:
-    "Why businesses worldwide choose Docfyle Advisory: industry expertise, end-to-end bookkeeping and CFO services, bank-level security, dedicated teams, and tool-friendly integration.",
+    "Discover why 100+ US businesses trust Docfyle Advisory for bookkeeping and accounting. Dedicated experts, bank-level data security, full-service accounting, and seamless QuickBooks & Xero integration.",
   keywords: [
-    "why choose docfyle advisory",
-    "virtual bookkeeping partner",
-    "outsourced accounting benefits",
-    "dedicated account manager bookkeeping",
-    "secure cloud bookkeeping",
-    "QuickBooks AppFolio bookkeeping team",
-    "bookkeeping services USA",
+    "best virtual bookkeeping service USA",
+    "outsourced bookkeeping benefits",
+    "dedicated bookkeeper for small business",
+    "secure online bookkeeping service",
+    "reliable accounting firm USA",
+    "QuickBooks certified bookkeeper",
+    "Xero certified accountant",
+    "why outsource bookkeeping",
   ],
 });
 

@@ -3,10 +3,17 @@ import { SectionShell } from "@/components/ui/section-shell";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "About",
+  title: "About Docfyle Advisory | Expert Bookkeeping & Accounting Team",
   path: "/about",
   description:
-    "Learn about Docfyle Advisory, our team values, and our approach to bookkeeping and accounting excellence.",
+    "Docfyle Advisory is a trusted virtual bookkeeping and accounting firm serving US businesses across property management, eCommerce, healthcare, and startups. Learn about our team and mission.",
+  keywords: [
+    "about Docfyle Advisory",
+    "bookkeeping firm USA",
+    "virtual accounting company",
+    "outsourced bookkeeping team",
+    "accounting experts USA",
+  ],
 });
 
 export default function AboutPage() {

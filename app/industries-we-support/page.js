@@ -11,22 +11,21 @@ import { absoluteUrl, pageMetadata } from "@/lib/site";
 import { pageServiceSchema } from "@/lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Industry Specific Bookkeeping Services",
+  title: "Industry-Specific Bookkeeping & Accounting Services | Docfyle Advisory",
   path: "/industries-we-support",
   description:
-    "Industry-specific virtual bookkeeping and accounting for property management, eCommerce, healthcare, CPAs, and high-growth businesses. QuickBooks, AppFolio, Xero, Buildium & Shopify.",
+    "Docfyle Advisory delivers specialized bookkeeping for property management, eCommerce, healthcare, law firms, startups, and CPA firms across the USA. Industry experts on QuickBooks, AppFolio, Xero & Buildium.",
   keywords: [
-    "industry specific bookkeeping",
-    "property management bookkeeping",
-    "ecommerce bookkeeping services",
+    "property management bookkeeping services",
+    "eCommerce bookkeeping services",
     "healthcare accounting services",
-    "CPA bookkeeping support",
-    "virtual bookkeeping global",
-    "AppFolio bookkeeping",
-    "QuickBooks industry accounting",
-    "cash flow management services",
-    "bookkeeping USA UK Australia Dubai",
-    "docfyle advisory industries",
+    "law firm bookkeeping",
+    "CPA firm bookkeeping support",
+    "startup accounting services",
+    "AppFolio accounting experts",
+    "Buildium bookkeeping services",
+    "industry specific accounting USA",
+    "virtual bookkeeping for small business",
   ],
 });
 

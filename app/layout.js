@@ -15,13 +15,18 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = pageMetadata({
-  description: siteConfig.description,
+  description:
+    "Docfyle Advisory provides expert virtual bookkeeping, accounting, tax preparation, and CFO services for US businesses. Trusted by startups, property managers, and eCommerce brands.",
   keywords: [
-    "bookkeeping services",
-    "accounting services",
-    "real estate bookkeeping",
-    "tax filing",
-    "financial reporting",
+    "virtual bookkeeping services USA",
+    "outsourced accounting services",
+    "online bookkeeping for small business",
+    "virtual CFO services",
+    "QuickBooks bookkeeping",
+    "tax preparation services",
+    "property management bookkeeping",
+    "remote accounting firm",
+    "Docfyle Advisory",
   ],
 });
 
