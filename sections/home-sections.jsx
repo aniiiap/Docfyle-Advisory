@@ -64,7 +64,7 @@ export function HeroSection() {
                   priority
                   quality={88}
                   sizes="(max-width: 1024px) 100vw, 40vw"
-                  src="/young-beautiful-businesswoman-sitting-workplace-office.jpg"
+                  src="/young-beautiful-businesswoman-sitting-workplace-office.webp"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-navy/40 via-transparent to-transparent" />
               </div>

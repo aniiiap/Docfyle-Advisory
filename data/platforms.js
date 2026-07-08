@@ -6,8 +6,9 @@ export const platformLogos = [
   { src: "/Platforms/intuit-quickbooks1505.jpg", alt: "Intuit QuickBooks" },
   { src: "/Platforms/xero-logo-png_seeklogo-261177.png", alt: "Xero" },
   { src: "/Platforms/CINC_Systems_Logo.jpg", alt: "CINC Systems" },
-  { src: "/Platforms/download-removebg-preview.png", alt: "Partner platform" },
-  { src: "/Platforms/download (1).png", alt: "Partner platform" },
-  { src: "/Platforms/images.png", alt: "Partner platform" },
-  { src: "/Platforms/205c92a6-4164-4486-bf19-83071b233d82.png", alt: "Partner platform" },
+  { src: "/Platforms/microsoft-dynamic.png", alt: "Partner platform" },
+  { src: "/Platforms/appfolio.webp", alt: "Partner platform" },
+  { src: "/Platforms/supy.png", alt: "Partner platform" },
+  { src: "/Platforms/zoho.png", alt: "Partner platform" },
+  { src: "/Platforms/taxact.png", alt: "Partner platform" },
 ];

@@ -27,7 +27,7 @@ export function IndustriesPageHero() {
     <section 
       className="relative overflow-hidden border-b border-[#e8e0d6] bg-page-hero"
       style={{
-        backgroundImage: "linear-gradient(rgba(248, 250, 252, 0.4), rgba(248, 250, 252, 0.55)), url('/businessman-standing-roof-with-digital-map_670147-38177.avif')",
+        backgroundImage: "linear-gradient(rgba(248, 250, 252, 0.4), rgba(248, 250, 252, 0.55)), url('/businessman-standing-roof-with-digital-map_670147-38177.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

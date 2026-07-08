@@ -23,7 +23,7 @@ export function ServicesPageHero() {
     <section 
       className="relative overflow-hidden border-b border-[#e8e0d6] bg-page-hero py-16 sm:py-20 lg:py-24"
       style={{
-        backgroundImage: "linear-gradient(rgba(248, 250, 252, 0.65), rgba(248, 250, 252, 0.75)), url('/notebook-globe-blue-background-flat-lay.jpg')",
+        backgroundImage: "linear-gradient(rgba(248, 250, 252, 0.65), rgba(248, 250, 252, 0.75)), url('/notebook-globe-blue-background-flat-lay.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center 25%",
       }}
