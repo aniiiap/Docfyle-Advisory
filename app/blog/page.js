@@ -19,8 +19,8 @@ export const metadata = pageMetadata({
   ],
 });
 
-// Implement ISR - revalidate every hour
-export const revalidate = 3600;
+// Implement ISR - revalidate every 60 seconds
+export const revalidate = 60;
 
 function blogListingJsonLd(posts) {
   return {
