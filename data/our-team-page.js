@@ -40,7 +40,7 @@ export const leaders = [
     name: "Murli Atal",
     role: "Global Strategy Advisor",
     bio: "Murli Atal is a Chartered Accountant with 9+ years of experience in accounting, financial consulting, and business advisory. He supports US and Australia clients with virtual CFO services, financial modeling, valuation, and ERP implementation.",
-    image: "/leaders/murli.jpeg",
+    image: "/leaders/murli.png",
     linkedin: "https://www.linkedin.com/in/ca-murli-atal-2ba75094/",
   },
 ];
