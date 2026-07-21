@@ -51,7 +51,7 @@ export const teamMembers = [
     name: "Gaurav Mundra",
     role: "Senior Advisory Associate",
     expertise: "Growth planning and financial operations alignment",
-    image: "/team/avatar-placeholder.svg",
+    image: "/team/gaurav.png",
     linkedin: "#",
   },
   {
@@ -59,7 +59,7 @@ export const teamMembers = [
     name: "Sahaj Maru",
     role: "Accounting & Compliance Specialist",
     expertise: "Month-end reporting and compliance readiness",
-    image: "/team/sahaj.jpg",
+    image: "/team/sahaj.png",
     linkedin: "#",
   },
   {
@@ -67,7 +67,7 @@ export const teamMembers = [
     name: "Nimit Nogia",
     role: "Client Delivery Specialist",
     expertise: "Process controls and client reporting quality",
-    image: "/team/nimit.jpg",
+    image: "/team/nimit.png",
     linkedin: "#",
   },
   // {
