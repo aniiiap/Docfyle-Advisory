@@ -1,12 +1,14 @@
 import { JsonLd } from "@/components/json-ld";
 import {
   ServicesCtaSection,
+  ServicesFaqSection,
   ServicesOfferSection,
   ServicesPageHero,
   ServicesWhatWeDoSection,
 } from "@/sections/services-page-sections";
 import { absoluteUrl, pageMetadata } from "@/lib/site";
-import { pageServiceSchema } from "@/lib/schema";
+import { pageServiceSchema, faqPageSchema } from "@/lib/schema";
+import { servicesPageFaqs } from "@/data/services-page";
 
 export const metadata = pageMetadata({
   title: "Bookkeeping, Accounting, Tax & CFO Services | Docfyle Advisory",
@@ -41,9 +43,11 @@ export default function ServicesPage() {
             "Virtual bookkeeping, accounting, tax, payroll, virtual CFO, and financial reporting for businesses worldwide.",
         })}
       />
+      <JsonLd data={faqPageSchema(servicesPageFaqs)} />
       <ServicesPageHero />
       <ServicesWhatWeDoSection />
       <ServicesOfferSection />
+      <ServicesFaqSection />
       <ServicesCtaSection />
     </>
   );

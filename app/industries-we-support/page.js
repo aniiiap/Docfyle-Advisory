@@ -6,9 +6,11 @@ import {
   IndustriesGridSection,
   IndustriesNicheSection,
   IndustriesPageHero,
+  IndustriesFaqSection,
 } from "@/sections/industries-page-sections";
 import { absoluteUrl, pageMetadata } from "@/lib/site";
-import { pageServiceSchema } from "@/lib/schema";
+import { pageServiceSchema, faqPageSchema } from "@/lib/schema";
+import { industriesPageFaqs } from "@/data/industries-page";
 
 export const metadata = pageMetadata({
   title: "Industry-Specific Bookkeeping & Accounting Services | Docfyle Advisory",
@@ -42,11 +44,13 @@ export default function IndustriesPage() {
           serviceType: "Industry-Specific Bookkeeping and Accounting",
         })}
       />
+      <JsonLd data={faqPageSchema(industriesPageFaqs)} />
       <IndustriesPageHero />
       <IndustriesGridSection />
       <IndustriesEmpowerSection />
       <IndustriesExpertiseSection />
       <IndustriesNicheSection />
+      <IndustriesFaqSection />
       <IndustriesCtaSection />
     </>
   );

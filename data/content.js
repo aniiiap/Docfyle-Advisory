@@ -1,11 +1,14 @@
 import {
+  Activity,
   BarChart3,
+  Briefcase,
   Building2,
   Calculator,
   Coffee,
   FileSpreadsheet,
   Home,
   Landmark,
+  Rocket,
   ShieldCheck,
   ShoppingCart,
   Store,
@@ -46,6 +49,9 @@ export const industries = [
   { title: "eCommerce Businesses", icon: Store },
   { title: "Cafes", icon: Coffee },
   { title: "Retail and wholesaler", icon: ShoppingCart },
+  { title: "Healthcare Practices", icon: Activity },
+  { title: "Law Firms", icon: Briefcase },
+  { title: "Tech Startups", icon: Rocket },
 ];
 
 export const stats = [
@@ -105,7 +111,7 @@ export const faqs = [
   {
     question: "What accounting software do you use?",
     answer:
-      "Our team is proficient in QuickBooks, AppFolio, Buildium, CINC, Xero, and more. We adapt seamlessly to your preferred tools — so there's no need to switch software or change your existing workflows.",
+      "Our team is fully proficient in QuickBooks, Xero, Zoho Books, AppFolio, Buildium, Yardi, and CINC. We adapt seamlessly to your preferred tools — so there's no need to switch software or change your existing workflows.",
   },
 ];
 

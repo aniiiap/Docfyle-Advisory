@@ -25,7 +25,7 @@ export function Footer() {
         <div className="min-w-0">
           <Image
             alt="Docfyle Advisory logo"
-            className="h-9 w-auto brightness-0 invert"
+            className="h-9 w-auto"
             height={36}
             src="/Docfyle-Advisory_New (2).png"
             width={180}

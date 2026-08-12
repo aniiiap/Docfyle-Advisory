@@ -33,33 +33,28 @@ export const servicesPageOfferings = [
 
 export const servicesPageFaqs = [
   {
-    question: "What industries do you specialize in?",
+    question: "Does Docfyle Advisory provide payroll, payouts, and compliance services?",
     answer:
-      "We specialize in virtual bookkeeping, accounting, and CFO services tailored to businesses of all sizes across the globe. Our team is proficient in AppFolio, QuickBooks, CINC, and Buildium.",
+      "Yes, we offer end-to-end payroll management and compliance services. We handle salary processing, tax deductions, year-end forms (W-2, 1099), and manage vendor payouts, ensuring your business stays fully compliant with IRS and local state regulations.",
+  },
+  {
+    question: "Do you offer catch-up bookkeeping and virtual CFO services?",
+    answer:
+      "Absolutely. If your books are months or years behind, our catch-up bookkeeping service will reconcile all accounts and bring you up to speed quickly. Once organized, our virtual CFOs provide financial modeling, budgeting, and strategic cash flow forecasting.",
+  },
+  {
+    question: "What is the cost of outsourcing virtual bookkeeping in the USA?",
+    answer:
+      "The cost of outsourcing virtual bookkeeping varies by business size and complexity. Docfyle Advisory offers highly competitive and flexible pricing—including monthly retainers and project-based cleanup fees—so you only pay for what you need.",
   },
   {
     question: "Do I need to switch from my current accounting software?",
     answer:
-      "Not at all. We work with all the platforms — AppFolio, Zoho, Xero, Buildium, CINC, and QuickBooks. We integrate seamlessly with your existing systems.",
+      "No, you do not need to switch. Our bookkeeping experts work directly inside your existing platforms, including QuickBooks, Xero, Zoho, AppFolio, CINC, and Buildium, ensuring a seamless integration without data migration headaches.",
   },
   {
     question: "How do you ensure the security of my financial data?",
     answer:
-      "Data security is a top priority. We use encrypted cloud systems, restricted access protocols, and industry-grade compliance standards to keep your information safe. NDAs are signed at the onboarding stage.",
-  },
-  {
-    question: "Will I get a dedicated point of contact?",
-    answer:
-      "Yes. Every client at Docfyle Advisory gets a dedicated account manager and bookkeeping lead — ensuring smooth communication, faster query resolution, and consistent support for all your accounting and reporting needs.",
-  },
-  {
-    question: "Do you offer tax preparation services across the Globe?",
-    answer:
-      "Absolutely. From tax preparation and compliance to planning and filing, we cover both federal and state-level taxes. Our experts ensure timely filings and help you maximize deductions.",
-  },
-  {
-    question: "How much do bookkeeping and accounting services cost?",
-    answer:
-      "We offer flexible pricing models—hourly rates, monthly retainers, or project-based pricing—depending on the complexity and volume of your work. Let's schedule a free consultation to give you an exact quote.",
+      "Data security is our top priority. We use encrypted cloud systems, restricted access protocols, and industry-grade compliance standards to keep your financial information completely secure. NDAs are signed during the onboarding stage.",
   },
 ];

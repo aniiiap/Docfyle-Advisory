@@ -38,33 +38,28 @@ export const industriesWeSupport = [
 
 export const industriesPageFaqs = [
   {
-    question: "What services does Docfyle Advisory offer?",
+    question: "Do you provide bookkeeping for cafes and restaurants?",
     answer:
-      "We provide virtual bookkeeping, accounting, CFO services, financial modeling, and cash flow management for businesses across all industries globally. Our solutions are fully tailored to your specific needs — ensuring accuracy, compliance, and financial clarity at every stage of your growth.",
+      "Yes, Docfyle Advisory provides specialized bookkeeping for cafes, restaurants, and food service businesses. We track daily sales, manage vendor payouts, reconcile POS systems, and handle payroll, so you have a clear picture of your food costs and profit margins.",
   },
   {
-    question: "Can your team handle industry-specific reporting needs?",
+    question: "What accounting software is best for property management companies?",
     answer:
-      "Absolutely. We create fully customized financial reports tailored to your industry — including cash flow statements, profit and loss reports, budget vs actual analysis, and platform-specific revenue breakdowns. Whatever your reporting needs, we've got it covered.",
+      "For property management, software like AppFolio, Buildium, and Yardi are industry standards. We specialize in these platforms, managing everything from rent collection tracking to CAM reconciliations and owner statements.",
   },
   {
-    question: "How do you price your services?",
+    question: "How do you handle eCommerce bookkeeping for Shopify and Amazon?",
     answer:
-      "We offer flexible pricing models — hourly, monthly retainer, or project-based — depending on the complexity and scope of your work. Schedule a free consultation and we'll give you an exact quote tailored to your business.",
+      "We manage real-time bookkeeping for eCommerce brands by tracking sales, inventory costs, returns, and payment gateway fees. We integrate seamlessly with Shopify, Amazon, and WooCommerce to provide accurate profit and loss statements.",
   },
   {
-    question: "Will I get reports tailored to my industry?",
+    question: "Can your team handle industry-specific financial reporting needs?",
     answer:
-      "Yes. We build customized reporting dashboards and delivery schedules based on your specific industry and business needs. Whether it's a cash flow forecast, profit analysis, or platform-wise revenue breakdown — your reports are built around what matters most to your business.",
+      "Absolutely. We create fully customized financial reports tailored to your industry—including cash flow statements, budget vs actual analysis, and platform-specific revenue breakdowns.",
   },
   {
-    question: "What if my industry isn't listed?",
+    question: "Do you support accounting software migrations or integrations?",
     answer:
-      "No problem at all. We work with businesses across all industries globally. Schedule a free consultation and we'll design a fully customized bookkeeping and accounting plan that fits your specific needs perfectly.",
-  },
-  {
-    question: "Do you support tool migrations or integrations?",
-    answer:
-      "Yes. We work with QuickBooks, Xero, NetSuite, AppFolio, Buildium, Shopify, and more. In addition to day-to-day bookkeeping, we assist with full system migrations and platform integrations — ensuring smooth transitions with zero disruption to your business operations.",
+      "Yes. In addition to day-to-day bookkeeping, we assist with full system migrations to platforms like QuickBooks Online and Xero. We ensure a smooth transition with zero disruption to your business operations.",
   },
 ];
