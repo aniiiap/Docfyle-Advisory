@@ -1,4 +1,5 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { BackToTop } from "@/components/back-to-top";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <BackToTop />
       </body>
+      <GoogleAnalytics gaId="G-S520NGF3MK" />
     </html>
   );
 }
