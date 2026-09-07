@@ -2,8 +2,6 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { createClient } from "@sanity/client";
 import { NextResponse } from "next/server";
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-
 const sanityClient = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
@@ -14,6 +12,11 @@ const sanityClient = createClient({
 
 export async function GET(req) {
   try {
+    if (!process.env.GEMINI_API_KEY) {
+      return NextResponse.json({ error: "Missing API Key" }, { status: 500 });
+    }
+    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+    
     const authHeader = req.headers.get("authorization");
     if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
       // return NextResponse.json({ error: "Unauthorized" }, { status: 401 });

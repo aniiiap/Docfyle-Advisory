@@ -6,7 +6,6 @@ import { BlogCard } from "@/components/blog-card";
 import { CtaBanner } from "@/components/cta-banner";
 import { FadeIn } from "@/components/ui/fade-in";
 import { SectionShell } from "@/components/ui/section-shell";
-import { StaggerGrid, StaggerItem } from "@/components/ui/stagger";
 import { useState } from "react";
 import { client } from "@/sanity/lib/client";
 import { latestPostsQuery } from "@/sanity/lib/queries";
@@ -76,13 +75,13 @@ export function BlogGridSection({ featuredPost, initialPosts, categories }) {
         </FadeIn>
       )}
       
-      <StaggerGrid className="grid gap-7 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-        {posts.map((post) => (
-          <StaggerItem key={post._id}>
+      <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+        {posts.map((post, i) => (
+          <FadeIn key={post._id} delay={(i % 6) * 0.1}>
             <BlogCard post={post} />
-          </StaggerItem>
+          </FadeIn>
         ))}
-      </StaggerGrid>
+      </div>
 
       {hasMore && (
         <FadeIn className="mt-12 flex justify-center">
