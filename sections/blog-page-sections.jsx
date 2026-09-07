@@ -10,6 +10,7 @@ import { StaggerGrid, StaggerItem } from "@/components/ui/stagger";
 import { useState } from "react";
 import { client } from "@/sanity/lib/client";
 import { latestPostsQuery } from "@/sanity/lib/queries";
+import { loadMorePostsAction } from "@/app/actions/blog";
 
 export function BlogPageHero({ totalCount = 0 }) {
   return (
@@ -45,15 +46,21 @@ export function BlogGridSection({ featuredPost, initialPosts, categories }) {
     if (isLoading) return;
     setIsLoading(true);
     try {
-      const newPosts = await client.fetch(latestPostsQuery, {
-        featuredId: featuredPost?._id || "none",
-        start: posts.length,
-        end: posts.length + 6,
-      });
-      if (newPosts.length < 6) {
-        setHasMore(false);
+      const response = await loadMorePostsAction(
+        featuredPost?._id,
+        posts.length,
+        posts.length + 6
+      );
+      
+      if (response.success) {
+        const newPosts = response.posts;
+        if (newPosts.length < 6) {
+          setHasMore(false);
+        }
+        setPosts((prev) => [...prev, ...newPosts]);
+      } else {
+        console.error(response.error);
       }
-      setPosts((prev) => [...prev, ...newPosts]);
     } catch (error) {
       console.error("Failed to load more posts", error);
     } finally {

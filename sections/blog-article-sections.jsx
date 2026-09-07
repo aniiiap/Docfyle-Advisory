@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { BlogCard } from "@/components/blog-card";
+import { BlogChatbot } from "@/components/blog-chatbot";
 import { BlogReadingProgress } from "@/components/blog-reading-progress";
 import { CtaBanner } from "@/components/cta-banner";
 import { FadeIn } from "@/components/ui/fade-in";
@@ -208,6 +209,10 @@ export function BlogArticleView({ post, relatedPosts }) {
                   {post.excerpt}
                 </p>
               </div>
+            </FadeIn>
+
+            <FadeIn>
+              <BlogChatbot articleText={JSON.stringify(post.body)} />
             </FadeIn>
 
             <div className="blog-article-divider my-10 sm:my-12" aria-hidden />

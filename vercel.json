@@ -1,5 +1,11 @@
 {
   "installCommand": "npm install --legacy-peer-deps",
   "buildCommand": "next build",
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "crons": [
+    {
+      "path": "/api/generate-blog",
+      "schedule": "0 9 * * 2,5"
+    }
+  ]
 }
