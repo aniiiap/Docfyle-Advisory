@@ -33,6 +33,6 @@ export async function POST(req) {
     return NextResponse.json({ answer: responseText });
   } catch (error) {
     console.error(error);
-    return NextResponse.json({ error: "Failed to generate answer" }, { status: 500 });
+    return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }

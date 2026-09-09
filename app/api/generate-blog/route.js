@@ -42,7 +42,7 @@ export async function GET(req) {
         "title": "String",
         "slug": "String (lowercase, hyphens)",
         "excerpt": "String",
-        "bodyText": "The full blog content in plain text with newlines. Include direct Q&A, bullet points, and specific advice.",
+        "bodyText": "The full blog content in plain text with double-newlines between EVERY paragraph and EVERY list item. Use ## for H2 headers, ### for H3 headers. Start list items with - ",
         "tags": ["Array", "of", "strings"],
         "metaTitle": "String under 60 chars"
       }
@@ -55,13 +55,39 @@ export async function GET(req) {
     const cleanedText = responseText.replace(/```json\n?/, "").replace(/```\n?/, "").trim();
     const blogData = JSON.parse(cleanedText);
 
-    // Convert bodyText to Sanity Portable Text
-    const bodyBlocks = blogData.bodyText.split('\n\n').map(paragraph => ({
-      _type: 'block',
-      children: [{ _type: 'span', text: paragraph.trim(), marks: [] }],
-      markDefs: [],
-      style: 'normal'
-    }));
+    const bodyBlocks = blogData.bodyText.split('\n\n').map(paragraph => {
+      let style = 'normal';
+      let text = paragraph.trim();
+      let listItem;
+      let level;
+
+      if (text.startsWith('### ')) {
+        style = 'h3';
+        text = text.replace('### ', '');
+      } else if (text.startsWith('## ')) {
+        style = 'h2';
+        text = text.replace('## ', '');
+      } else if (text.startsWith('# ')) {
+        style = 'h1';
+        text = text.replace('# ', '');
+      } else if (text.match(/^[-*]\s/)) {
+        style = 'normal';
+        listItem = 'bullet';
+        level = 1;
+        text = text.replace(/^[-*]\s/, '');
+      }
+
+      // Basic bold removal (we can't easily map marks without complex parsing, so we just clean the asterisks for clean text if needed, or leave them. For now let's clean them to avoid ** ** showing up)
+      text = text.replace(/\*\*/g, '');
+
+      return {
+        _type: 'block',
+        children: [{ _type: 'span', text: text, marks: [] }],
+        markDefs: [],
+        style: style,
+        ...(listItem ? { listItem, level } : {})
+      };
+    }).filter(block => block.children[0].text.length > 0);
 
     const doc = {
       _type: "post",
