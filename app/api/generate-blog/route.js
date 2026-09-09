@@ -23,7 +23,7 @@ export async function GET(req) {
       // In production you would block, but for manual testing we allow
     }
 
-    const model = genAI.getGenerativeModel({ model: "gemini-3.8-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
 
     const prompt = `
       You are an expert bookkeeping and tax advisor for Docfyle Advisory. 
