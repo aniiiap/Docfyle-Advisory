@@ -10,4 +10,8 @@ export const certificationBadges = [
     src: "/Certifications/blob-300x300.png",
     alt: "Intuit QuickBooks trained bookkeeper",
   },
+  {
+    src: "/Certifications/xero-certified-badge.webp",
+    alt: "Xero Certified Advisor",
+  },
 ];

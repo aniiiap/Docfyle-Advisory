@@ -101,7 +101,7 @@ export const faqs = [
   {
     question: "Do you work with businesses outside the Globe?",
     answer:
-      "Yes. We work with clients across the USA, UK, Australia, Dubai, and beyond — delivering remote bookkeeping and accounting services that meet local compliance standards and tax requirements wherever your business operates.",
+      "Yes. We support businesses across the USA, UK, Australia (including Melbourne, Perth, Adelaide, and Sydney), Dubai (UAE), and globally — delivering remote bookkeeping, Xero and QuickBooks accounting, and financial management tailored to local compliance standards wherever you operate.",
   },
   {
     question: "Which industries benefit most from your remote bookkeeping services?",
