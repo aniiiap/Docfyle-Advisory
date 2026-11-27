@@ -39,10 +39,9 @@ export function HeroSection() {
               Virtual Bookkeeping, Accounting & CFO Services for Growing Businesses
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-200">
-              Docfyle Advisory provides specialized virtual bookkeeping, accounting, tax, and CFO
-              services for growing businesses across the globe. Our expert team delivers
-              accurate financial reporting, tax compliance, and stress-free bookkeeping so you can focus
-              on growth with confidence.
+              Docfyle Advisory delivers dedicated virtual bookkeeping, accounting, tax, and CFO
+              services for growing businesses across the USA, UK, Australia, and worldwide. Our expert team ensures
+              accurate financial reporting, local compliance, and stress-free bookkeeping so you can scale with confidence.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button href={siteConfig.calendlyUrl}>

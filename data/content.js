@@ -47,7 +47,7 @@ export const industries = [
   { title: "HOAs", icon: ShieldCheck },
   { title: "Small Businesses", icon: Store },
   { title: "eCommerce Businesses", icon: Store },
-  { title: "Cafes", icon: Coffee },
+  { title: "Cafes & Restaurants", icon: Coffee },
   { title: "Retail and wholesaler", icon: ShoppingCart },
   { title: "Healthcare Practices", icon: Activity },
   { title: "Law Firms", icon: Briefcase },
